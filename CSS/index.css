@@ -141,19 +141,18 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
-.modal_label:focus,
-.modal_label:hover {
-  fill: #2196f3;
-}
 .modal_input {
   width: 100%;
   outline: none;
   padding: 12px 42px;
   font-size: 12px;
   cursor: pointer;
-  fill: #212121;
+  fill: #757575;
 }
-
+.modal_input:hover,
+.modal_input:focus {
+  border: 1px solid #2196f3;
+}
 .modal_input_svg {
   position: absolute;
   left: 15px;
@@ -172,6 +171,37 @@
   font-size: 12px;
   padding: 12px 16px;
   cursor: pointer;
+}
+.modal_comments:hover,
+.modal_comments:focus {
+  border: 1px solid #2196f3;
+}
+.modal_check {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 8px;
+}
+.label_checkbox {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.16;
+  color: #757575;
+}
+.modal_btn {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 10px 75px;
+  background-color: #2196f3;
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
 }
 .modal_form_group .modal_comments::placeholder {
   color: rgba(117, 117, 117, 1);
@@ -389,7 +419,6 @@
   align-items: center;
 }
 .aside_footer_title {
-  display: flex;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -398,4 +427,45 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer_subscribe {
+  margin-left: 93px;
+}
+.modal_title__footer {
+  font-family: "Roboto";
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.form_footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.placeholder_footer {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 45px 15px 16px;
+}
+.button_subscribe {
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 13px 28px;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.button_svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }

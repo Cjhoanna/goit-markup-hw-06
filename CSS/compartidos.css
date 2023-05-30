@@ -135,6 +135,7 @@ img {
 .footer_container {
   padding: 60px;
   display: flex;
+  align-items: baseline;
 }
 .footer_social {
   margin-left: 72px;

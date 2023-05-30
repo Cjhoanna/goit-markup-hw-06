@@ -72,7 +72,7 @@
                 <label for="name" class="modal_label">
                   Name
                 </label>
-                <input class="modal_input" type="text" name="name" id="name">
+                <input class="modal_input" type="text" name="name" id="name" autofocus>
                 <svg class="modal_input_svg">
                   <use href="./imagenes/svg/sprite.svg#icon-user"></use>
                 </svg>
@@ -81,7 +81,7 @@
                 <label for="name" class="modal_label">
                   Telephone
                 </label>
-                <input class="modal_input" type="tel" name=" Telephone" id=" Telephone">
+                <input class="modal_input" type="tel" name=" Telephone" id=" Telephone" autofocus>
                 <svg class="modal_input_svg">
                   <use href="./imagenes/svg/sprite.svg#icon-phone"></use>
                 </svg>
@@ -90,7 +90,7 @@
                 <label for="name" class="modal_label">
                   Telephone
                 </label>
-                <input class="modal_input" type="email" name=" email" id="email">
+                <input class="modal_input" type="email" name=" email" id="email" autofocus>
                 <svg class="modal_input_svg">
                   <use href="./imagenes/svg/sprite.svg#icon-email"></use>
                 </svg>
@@ -102,6 +102,13 @@
                 <textarea class="modal_comments" name="Comments" id="Comments" cols="30" rows="10"
                   placeholder="Enter the text"></textarea>
               </div>
+              <div class="modal_check">
+                <label class="label_checkbox">
+                  <input type="checkbox" name="checkbox" />
+                  I agree with the newsletter and accept the Terms and Conditions
+                </label>
+              </div>
+              <button type="button" class="modal_btn">Send</button>
             </form>
           </div>
         </div>
@@ -434,6 +441,17 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer_subscribe">
+        <h3 class="aside_footer_title">Subscribe to the newsletter</h3>
+        <form class="form_footer">
+          <input class="placeholder_footer" placeholder="Email"></input>
+          <button class="button_subscribe" type="button">Subscribe
+            <svg class="button_svg">
+              <use href="./imagenes/svg/sprite.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </aside>
   </footer>
